@@ -236,399 +236,10 @@ select {
     background-color:rgba(255, 255, 255, 0.4);
   }
 
-
-
-
 /* -----------------------결과페이지---------------------------*/
 
 .result {
-    background-image: url('resultback.png');
-    /* background-position: left top; */
-    background-repeat: no-repeat;
-    /* background-size: 1920px 350px; */
-    height: 100vh;
-    width: 100vw;
-    min-width: 1300px;
-}
-
-.container {
-    width: auto;
-    margin-top: 130px;
-    padding-top: 0;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 0;
-    background: #fff;
-    height: 70px;
-
-}
-
-.search-result {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 25px 10px;
-    height: 20px;
-    box-sizing: border-box;
-    text-align:left;
-    width: 1000px;
-    margin-left: 10%;
-
-}
-
-.search-content-1, .search-content-2, .search-content-3 {
-    color: #C8C8C8;
-    font-size: 14px;
-    font-family:'Pretendard-Regular';
-}
-
-.result-content-1, .result-content-2{
-
-    line-height: 1.5;
-    color: #444;
-    background-color: #fff;
-    width: 210px;
-    height: 25px;
-    margin: 0;
-    padding: 1px 30px;
-    border: 2px solid #c8c8c8;
-    border-radius: 20px;
-    font-family: "Pretendard-regular";
-    font-size: 14px;
-    font-weight: bold;
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
-    outline: none;
-
-}
-
-.result-content-3{
-    line-height: 1.5;
-    color: #444;
-    background-color: #fff;
-    width: 150px;
-    height: 20px;
-    margin: 0;
-    padding: 1px 30px;
-    border: 2px solid #c8c8c8;
-    border-radius: 20px;
-    font-family: "Pretendard-regular";
-    font-size: 14px;
-    font-weight: bold;
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
-    outline: none;
-}
-
-.result-content-3:hover{
-    border-color: #888;
-
-}
-
-
-.clear-box{
-    display: block;
-    margin-LEFT: 65%;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    width: 20vw;
-    min-width: 180px;
-    height: 15vh;
-    padding-top: 1.5%;
-    background-color: #ffffff;
-    background-color: rgba( 255, 255, 255, 0.3 );
-    border-radius: 3%;
-    margin-top: 100px;
-    color:#fff;
-
-}
-
-
-
-section{
-    display: flex;
-    justify-content:right;
-    align-items: center;
-    text-align: center;
-    font-size: 32px;
-    font-family:'Pretendard-ExtraBold;';
-    font-weight: 800;
-    padding-right: 30px;
-}
-
-.clear-box img{
-    width: 50px;
-}
-
-.clear-date{
-    padding-top: 10px;
-    font-size: 20px;
-    font-family: 'Pretendard-regular';
-
-}
-
-.info{
-    width: 100%;
-    display: flex;
-    padding-top: 0;
-    margin: 0 auto;
-    height: 55%;
-    background-color: rgba(213, 213, 213, 0.24);
-    min-width: 1300px;
-}
-
-.weather{
-    display: block;
-    margin-LEFT: 10%;
-    justify-content: space-between;
-    align-items: center;
-    text-align: left;
-    width: 240px;
-    min-width: 240px;
-    height: 80%;
-    background-color: #ffffff;
-    border-radius: 3%;
-    margin-top: 40px;
-    color:black;
-}
-
-.info-txt{
-    margin-left: 10%;
-    margin-top: 10%;
-    font-family: "Pretendard-regular";
-    font-size: 16px;
-    font-weight: bold;
-}
-
-
-canvas{
-    width: 320;
-    height: 460;
-}
-.graph{
-    display: block;
-    margin-left: 5%;
-    justify-content: space-between;
-    align-items: center;
-    text-align: left;
-    width: 400Px;
-    min-width: 400px;
-    height: 80%;
-    background-color: #ffffff;
-    border-radius: 3%;
-    margin-top: 40px;
-    color:black;
-}
-
-.tourist-count{
-    display: block;
-    margin-left: 10%;
-    margin-RIGHT: 10%;
-    justify-content: space-between;
-    align-items: center;
-    text-align: left;
-    width: 260Px;
-    min-width: 260px;
-    height: 80%;
-    background-color: #4c87da;
-    border-radius: 3%;
-    margin-top: 40px;
-    color:white;
-}
-
-.last-year-card{
-    display: flex;
-    margin: 0 auto;
-    justify-content: space-between;
-    align-items: center;
-    text-align: left;
-    width: 80%;
-    height: 25%;
-    background-color: #4c87da;
-    border-radius: 3%;
-    margin-top: 10px;
-    color:white;
-
-}
-
-.temp{
-    border-bottom:2px solid white;
-    padding-bottom:1px;
-    font-family: "Pretendard-regular";
-    font-size: 32px;
-    font-weight: bold;
-
-}
-
-.temp2{
-    border-bottom:2px solid white;
-    padding-bottom:1px;
-    font-family: "Pretendard-regular";
-    font-size: 32px;
-    font-weight: bold;
-
-}
-
-.last-date{
-    font-family: "Pretendard-regular";
-    font-size: 12px;
-    font-weight: bold;
-}
-
-.weather-info{
-    display: block;
-    padding-left: 10px;
-
-}
-
-.weather-notice{
-    font-family: "Pretendard-regular";
-    font-size: 12px;
-    font-weight: bold;
-    color: #fff;
-    text-align: left;
-
-}
-/*
-.this-year-card{
-    display: flex;
-    margin: 0 auto;
-    justify-content: space-between;
-    align-items: center;
-    text-align: left;
-    width: 80%;
-    height: 25%;
-    background-color: #4c87da;
-    border-radius: 3%;
-    margin-top: 10px;
-    color:white;
-    font-family: "Pretendard-regular";
-    font-size: 24px;
-    font-weight: bold;
-
-}*/
-
-.this-year-card{
-    display: flex;
-    margin: 0 auto;
-    justify-content: space-between;
-    align-items: center;
-    text-align: left;
-    width: 80%;
-    height: 25%;
-    background-color: #4c87da;
-    border-radius: 3%;
-    margin-top: 10px;
-    color:white;
-
-}
-
-.graph canvas{
-
-    margin-left: 10%;
-    margin-top: 3%;
-}
-
-.complexity{
-    display: flex;
-
-}
-
-.tourist-date {
-    text-align: right;
-    font-family: "Pretendard-regular";
-    font-size: 24px;
-    font-weight: bold;
-    margin-right: 10%;
-    margin-top: 5%;
-}
-
-.tour-txt1{
-    text-align: center;
-    font-family: "Pretendard-regular";
-    font-size: 16px;
-    margin-right: 25%;
-    margin-top: 20%;
-
-}
-
-.tour-count{
-    text-align: center;
-    font-family: "Pretendard-regular";
-    font-size: 40px;
-
-    font-weight: bold;
-}
-
-.tour-txt2{
-    text-align: center;
-    font-family: "Pretendard-regular";
-    font-size: 16px;
-    margin-right: 40%;
-    margin-top: 15%;
-
-}
-
-
-.complexity-txt{
-    font-family: "Pretendard-regular";
-    font-size: 36px;
-    font-weight: bold;
-
-}
-
-
-
-.complexity {
-    margin-left: 17%;
-    font-family: "Pretendard-regular";
-}
-
-
-.tour-txt3{
-
-    padding-top: 10%;
-
-}
-
-.search-btn2 {
-
-
-    background-color:#4c87da;
-    color: #fff;
-    border: none;
-    border-radius:10px;
-    padding:7px;
-    min-height:6px;
-    min-width: 60px;
-    font-family:"Pretendard-regular";
-    font-weight:bold;
-
-
-}
-
-.bonus{
-    background-color:#fff;
-    color: #4c87da;
-    font-family:"Pretendard-regular";
-    font-weight:bold;
-    text-decoration: none;
-
-}
-
-.bonus:hover{
-    background-color:#fff;
-    color: #4c87da;
-    font-family:"Pretendard-regular";
-    font-weight:bold;
-    text-decoration: none;
-    border-bottom:2px solid #4c87da;
-
-}
-
-/* -----------------------결과페이지---------------------------*/
-
-.result {
-    background-image: url('resultback.png');
+    background-image: url('../png/resultback.png');
     /* background-position: left top; */
     background-repeat: no-repeat;
     background-size: 1920px 300px;
@@ -670,7 +281,7 @@ canvas{
 }
 
 
-.check-box{
+.check-box2{
     /* display: flex; */
     justify-content: center;
     align-items: center;
@@ -678,7 +289,7 @@ canvas{
     margin-right: 20px;
 }
 
-.check-container{
+.check-container2{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -686,7 +297,7 @@ canvas{
     margin-bottom: 20px;
 }
 
-.check-box p{
+.check-box2 p{
     font-size: 14px;
     font-family: Pretendard;
     font-weight: 600;
@@ -697,47 +308,47 @@ canvas{
     text-align: left;
 }
 
-.result-content-1, .result-content-2  {
+.result-content-1 {
     /* 생략 */
       font-family: "Noto Sansf KR", sans-serif;
       font-size: 1rem;
       font-weight: 400;
       line-height: 1.5;
-  
+
       color: #444;
       background-color: #fff;
       background-color:rgba(255, 255, 255, 0.5);
       /* opacity: 0.3; */
-  
+
       padding: 0.7em 8.2em 0.7em 8.2em;
       margin: 0;
-  
+
       border: 1px solid #ebebeb;
       border-radius: 0.5em;
       box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.04);
-  
+
       -webkit-appearance:none; /* 크롬 화살표 없애기 */
       -moz-appearance:none; /* 파이어폭스 화살표 없애기 */
       appearance:none /* 화살표 없애기 */
   }
-  
-  .result-content-1, .result-content-2 :hover {
+
+  .result-content-1:hover {
       border-color: #A9C8F3;
     }
-    
-  .result-content-1, .result-content-2 :focus {
+
+  .result-content-1:focus {
       border-color: #A9C8F3;
       box-shadow: 0 0 1px 3px #A9C8F3;
       box-shadow: 0 0 0 3px -moz-mac-focusring;
       color: #222;
       outline: none;
     }
-    
-  .result-content-1, .result-content-2 :disabled {
+
+  .result-content-1:disabled {
       opacity: 0.5;
     }
 
-.date {
+.date2 {
     font-family: "Noto Sansf KR", sans-serif;
     font-size: 1rem;
     font-weight: 400;
@@ -757,7 +368,7 @@ canvas{
     text-decoration: none;
     }
 
-    .date:focus{
+    .date2:focus{
     border-color:#A9C8F3;
     box-shadow: 0 0 1px 3px #A9C8F3;
     box-shadow: 0 0 0 3px -moz-mac-focusring;
@@ -765,18 +376,18 @@ canvas{
     outline: none;
     }
 
-.date:hover {
+.date2:hover {
     border-color: #A9C8F3;
 }
 
 
-.date[type="date"]::-webkit-calendar-picker-indicator,
-.date[type="date"]::-webkit-inner-spin-button {
+.date2[type="date"]::-webkit-calendar-picker-indicator,
+.date2[type="date"]::-webkit-inner-spin-button {
         display: none;
         appearance: none;
     }
 
-.date[type="date"]::-webkit-calendar-picker-indicator {
+.date2[type="date"]::-webkit-calendar-picker-indicator {
     color: rgba(0, 0, 0, 0);
     opacity: 1;
     display: block;
@@ -1038,3 +649,5 @@ canvas{
 .tour-txt3{
     padding-top: 10%;
 }
+
+
