@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonus</title>
+    <link rel="stylesheet" th:href="|frontend/css/bonus.css|" type="text/css">
+</head>
+<body>
+    <nav class="nav-wrap">
+        <a href="/main" class="logo">OnThere</a>
+         <p th:if="${session.user}" th:text="|${session.user.name}님 반갑습니다.|"></p>
+        <div  class="nav-container">
+            <a th:if="${session.user}" href="/mypage">Mypage</a>
+        </div>
+    </nav>
+
+    <div class="find-btn" id="select-place">
+        <button class="tour-place-name" value="seoul" onclick="location.href='seoul'">서울</button>
+        <button class="tour-place-name" value="jeonju" onclick="location.href='jeonju'">전주</button>
+        <button class="tour-place-name" value="cheonan" onclick="location.href='cheonan'">천안</button>
+        <button class="tour-place-name" value="busan" onclick="location.href='busan'">부산</button>
+    </div>
+
+    <main>
+
+        <div th:if="${travelDtoArrayList}" class="tour-card-box">
+            <section th:each="travelDto: ${travelDtoArrayList}">
+                <img class="tour-card-img" th:src="@{${travelDto.url}}" alt="">
+                <div class="tour-card-name">
+                    <p th:text="${travelDto.name}" th:align="center"> travel name</p>
+                </div>
+
+                <div class="tour-card-info-box">
+                    <div class="tour-card-address">
+                        <p th:text="${travelDto.location}"> travel location</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+</body>
